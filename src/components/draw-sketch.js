@@ -41,7 +41,7 @@ export default function sketch(p){
           px.push([R, G, B]);
         }
         console.log('saved')
-        window.localStorage.setItem('map', JSON.stringify({values: px}));
+        window.localStorage["map"] =JSON.stringify({values: px});
       }
     }
 }

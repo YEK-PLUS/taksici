@@ -93,8 +93,8 @@ class Car {
 
   reset() {
     this.start = Date.now();
-    this.x = 80;
-    this.y = 50;
+    this.x = 120;
+    this.y = 140;
     this.width = 40;
     this.height = 25;
     this.angle = 0;
@@ -197,7 +197,7 @@ export default function sketch(p){
       p.noStroke();
       p.background(255);
 
-      worldPixels = JSON.parse(window.localStorage.getItem('map')).values;
+      worldPixels = JSON.parse(window.localStorage["map"]).values;
       const image1 = p.get(0, 0, WIDTH, HEIGHT);
       image1.loadPixels();
       for (var i = 0; i < image1.pixels.length; i += 4) {
